@@ -1,4 +1,4 @@
-### 🧠 OpenAI Agents SDK
+## 🧠 OpenAI Agents SDK
 
 The **OpenAI Agents SDK** is a lightweight and production-ready framework that enables you to build **agentic AI applications** with ease. It’s designed with minimal abstractions, yet powerful enough to express complex AI workflows using Python.
 

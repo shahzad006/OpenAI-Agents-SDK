@@ -9,6 +9,7 @@ Think of it like:
 - Or a teacher (agent) asks a calculator (tool) to solve a math question.
 
 
+
 ## ✅ Why use handoffs?
 Because:
 
@@ -16,7 +17,11 @@ Because:
 - Some tasks are better done by another agent or a special tool.
 - It makes your app smarter and cleaner.
 
+
+
 # Step-by-Step: How handoffs work
+
+
 
 ## Step 1: Make agents or tools
 You make an agent for each job.
@@ -25,15 +30,21 @@ You make an agent for each job.
 - Example: `DeliveryAgent` for deliveries.
 - Example: `MathTool` for solving sums.
 
+
+
 ## Step 2: One agent finds it needs 
 The first agent runs.
 It gets a request it can’t finish alone.
 
 - Example: OrderAgent needs DeliveryAgent to arrange delivery.
 
+
+
 ## Step 3: The agent does a HANDOFF
 - It says:
 **“I can’t do this part, let me hand it off to DeliveryAgent.”**
+
+
 
 
 ## Step 4: The other agent or tool does the job
@@ -41,10 +52,15 @@ It gets a request it can’t finish alone.
 - Does its task.
 - Returns result if needed.
 
+
+
+
 ## Step 5: The first agent continues (optional)
 - Sometimes the first agent waits.
 - Gets the result.
 - Gives final answer to the user.
+
+
 
 ## 💡 Example in real words
 
@@ -52,10 +68,10 @@ It gets a request it can’t finish alone.
 
 > You ask: “Book me a pizza and deliver it to my home.”
 
-1️⃣ `PizzaAgent` takes your order.
-2️⃣ `PizzaAgent` can’t deliver pizza. So it does a **handoff** to `DeliveryAgent.`
-3️⃣ `DeliveryAgent` arranges the delivery.
-4️⃣ You get your pizza! 🎉
+1️⃣ `PizzaAgent` takes your order.   <br>
+2️⃣ `PizzaAgent` can’t deliver pizza. So it does a **handoff** to `DeliveryAgent.` <br>
+3️⃣ `DeliveryAgent` arranges the delivery. <br>
+4️⃣ You get your pizza! 🎉 <br>
 
 ## ⚙️ How to do it in code?
 In code you:
@@ -89,6 +105,6 @@ agent: Agent = Agent(
 ```
 
 ## ✅ Key point
-**Handoffs = passing work to another helper**
-So your main agent stays simple.
+**Handoffs = passing work to another helper** <br>
+So your main agent stays simple. <br>
 Helpers handle special tasks.
